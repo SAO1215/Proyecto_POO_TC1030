@@ -12,5 +12,5 @@ El diagrama de clases contiene 5 clases, la clase principal es Bioma qué cuenta
 ## Avance 2
 ### Herencia 
 
-En este avance se basa en implementar la parte de herencia, esta consistío en crear la clase SeresVivos como abstracta, es de esta forma porque no es nuestra intencion hacer objetos "SeresVivos" directamente, sino que de esta clase hay tipos a los que heredamos sus características comunes con las que ya podemos generar clases hijas que usaremos como molde para crear objetos del tipo "Flora" o "Fauna". En el main ya se incluyen algunos objetos como ejemplo.
-Algunas consideraciones en este avance es que aun no se implementan las composiciones de "Clima" y "SeresVivos" a "Bioma", el avance se centra en la herencia.
+En este avance se basa en implementar la parte de herencia, esta consistío en crear la clase SeresVivos como abstracta, es de esta forma porque no es nuestra intencion hacer objetos "SeresVivos" directamente, sino que de esta clase hay tipos a los que heredamos sus características comunes con las que ya podemos generar clases hijas que usaremos como molde para crear objetos del tipo "Flora" o "Fauna", estos cuentan con sus propios metodos y atributos, pero tambien sobreescriben alos de su clase madre. En el main ya se incluyen algunos objetos como ejemplo.
+Algunas consideraciones en este avance es que aun no se implementan las composiciones de "Clima" y "SeresVivos" a "Bioma", el avance se centra en la herencia y faltan integrar intrucciones o un menu.
