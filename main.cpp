@@ -14,26 +14,24 @@ using namespace std;
 
 int main(){
 
-  cout<<"Primer especie floral"<<endl;
-  //Crear un objeto tipo flora e imprimir caracteristicas uno a uno
-	Flora rosa("Rosal", "Floral", "Comun");
-  cout<< rosa.getNombre()<<endl;
-  cout<< rosa.getTipo()<<endl;
-  cout<< rosa.getStatus()<<endl;
+  //Crear bioma
+  Bioma bioma;
+  //Rellenar el arreglo seresvivos[]
+  bioma.creaEjemplos();
+  //Imprimir los emeplos
+  bioma.muestraEjemplos();
 
-  cout<<"Segunda especie floral"<<endl;
-  //Crear otro objeto y que se imprima el resumen junto
-  Flora sauce("Sauce Lloron", "Plantae", "Raro");
+  //Añadir otro ser vivo de cada clase
+  bioma.registrarFauna("Mapache", "Fauna", "En peligro", "Omnivoros", "Mamifera", 3000, 17000);
+  bioma.registrarFlora("Rosal", "Flora", "Comun", 3.7, 4.2, 5000);
 
-	sauce.resumen(); //Sobreescritura
-  
-  cout<<"Primer especie de fauna"<<endl;
-  //Crear objeto fauna e imprimir resumen
-  Fauna conejo("Conejo", "Fauna", "Fuera de peligo", "Hervivora", "Mamifera");
+  //Imprimr de otra vez con los nuevos elementos
+  bioma.muestraEjemplos();
 
-  conejo.resumen();
-  
-  //Crear clima
-  Clima ("Despejado", 66, 1025, 55, 0);
+  //Crear clima e imprimirlo
+  Clima clima("Despejado", 66, 1025, 55, 0);
+  clima.mostrarClima();
 
+
+  return 0;
 }
