@@ -4,6 +4,16 @@
 
 Los biomas están compuestos por factores abióticos (clima) y bióticos (animales y plantas), para poder mantener un control y registro de estos componentes de una forma practica, este proyecto usa una estructura de clases donde se representa un bioma en conjunto con su tipo de clima y los seres vivos de que lo habitan, clasificados en su flora y fauna. El programa permite obtener la descripción general del bioma, su estado del clima, registrar nuevas especies y obtener información relacionada con los ejemplares que lo habitan, así como el calculo de la densidad de su población.
 
+## Funcionalidad
+
+Este es un proyecto para la clase TC1030 Programación Orientado a Objetos. Es un programa que permite captuar seres vivos de tipo Flora y Fauna, junto con las características de cada especie; nos permite calcular y llevar registro de la densidad de población dentro del bioma. 
+
+## Concideraciones
+
+El proyecto fue programado en replit con c++ standard, por lo que corre deberia funcionar en todos los sistemas.
+Para que el programa funcione primero se debe crear el clima del bioma, las primeras 3 lineas dentro del main no pueden ir despues ya que marcaria un error.
+
+
 ## Avance 1
 ### Diseño UML
 
@@ -20,3 +30,10 @@ Algunas consideraciones en este avance es que aun no se implementan las composic
 
 El avance tres hace uso de apuntadores, funciones virtual y el operador new para implementar polimorfismo en el código, desde Bioma a través de la clase definida como abstracta SeresVivos se pueden hacer uso de los tipos Flora y Fauna para añadir e imprimir nuevos ejemplares de cada clase con sus funciones propias. El programa imprime los seres vivos de ejemplo además de dos añadidos en el main uno de cada tipo, junto con la descripción del clima que no existia en la version anterior. 
 Consideraciones para el Avance 3: Al correr el programa se genera un archivo main inesperado. En esta versión del programa no muestra de forma correcta la densidad de población, en su lugar pone “-nan”, para solucionarlo hay que cambiarlo a un string. Hubo cambios menores que no se actualizaron en el UML. 
+
+## Avance 4
+### Clases Abstractas 
+
+Se definió de forma correcta a la clase SeresVivos como clase abstracta, esto significa que no se puden crear objetos de este tipo directamnte y que para crear objetos seran de sus clases hijas. Tambien se implemento la parte de composición de Clima como parte del Bioma. Se corrigió el error con el metodo de densidad de povlacion, ahora calcula y muestra los valores correctos. El programa esta comentado segun el proyecto demo.
+
+
