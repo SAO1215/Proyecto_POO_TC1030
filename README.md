@@ -1,4 +1,4 @@
-# Proyecto_POO_TC1030 (Avance 3)
+# Proyecto_POO_TC1030
 
 ## Contexto
 
