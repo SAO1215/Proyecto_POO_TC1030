@@ -1,4 +1,4 @@
-# Proyecto_POO_TC1030
+# Proyecto Bioma (POO_TC1030)
 
 ## Contexto
 
